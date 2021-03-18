@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const arr = [0, 1];
+
+      while (arr.length < 20) {
+        const last = arr.length - 1; // 2
+        arr.push(arr[last] + arr[last - 1]);
+        //        arr[2]  +   arr[1]
+        //          1     +     1
+        // [0, 1, 1, 2, 3, 5...]
+      }
+
+      alert(arr);
+      // for (let i = 1; i < arr.length; i++) {
+      //   if (arr[i] % 5 == 0) {
+      //     console.log(arr[i]);
+      //     break;
+      //   }
+      // }
+      let result = 0;
+      for (i = 0; i < arr.length; i++) {
+        result = result + arr[i];
+      }
+      console.log(result);
+    </script>
+  </body>
+</html>
