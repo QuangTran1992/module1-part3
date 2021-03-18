@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <table>
+    <tr></tr>
+  </table>
+  <body>
+    <script>
+      let iMax = 10;
+      let jMax = 10;
+      let f = new Array();
+
+      for (i = 0; i < iMax; i++) {
+        f[i] = new Array();
+        for (j = 0; j < jMax; j++) {
+          f[i][j] = Math.floor(Math.random() * 8 + 2);
+        }
+      }
+      console.log(f);
+
+      // function genarateMatrix(size, min, max) {
+      //   let matrix = [];
+      //   for (let i = 0; i < size; i++) {
+      //     let arr = [];
+      //     for (let j = 0; j < size; j++) {
+      //       arr[j] = Math.floor(Math.random() * (max - min + 1) + min);
+      //     }
+      //     matrix.push(arr);
+      //   }
+      //   return matrix;
+      // }
+
+      // function totalEven(matrix) {
+      //   let total = 0;
+      //   for (let i = 0; i < matrix.length; i++) {
+      //     for (let j = 0; j < matrix.length; j++) {
+      //       if (matrix[i][j] % 2 == 0) {
+      //         total = total + matrix[i][j];
+      //       }
+      //     }
+      //   }
+      //   return total;
+      // }
+    </script>
+  </body>
+</html>
