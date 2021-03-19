@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <label for="EN"> nhap tieng anh</label>
+    <input type="text" id="tienanh" />
+    <input type="button" value=" dich sang" onclick="trans()" />
+    <p id="res"></p>
+
+    <script>
+      let res = document.getElementById("res");
+      function trans() {
+        let input = document.getElementById("tienanh").value;
+        arrE = ["one", "two", "three"];
+        arrV = ["mot", "hai", "ba"];
+        for (let i = 0; i < arrE.length; i++) {
+          if (input == arrE[i]) {
+            res.innerHTML = arrV[i];
+            break;
+          } else {
+            res.innerHTML = "khong co trong tu dien ";
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
