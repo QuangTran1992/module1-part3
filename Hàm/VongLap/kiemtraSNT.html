@@ -8,24 +8,27 @@
   </head>
   <body>
     <script>
-      let x = parseFloat(prompt("input your number "));
-      console.log(x);
-      while (x == "" || isNaN(x) || parseInt(x) != x) {
-        x = +prompt("input your number ");
-      }
-      if (x < 2) {
-        alert("x khong phai la so NT");
-      } else {
-        for (let i = 2; i <= x / 2; i++) {
-          if (x % i == 0) {
-            alert("x khong phai la SNT");
-            break;
-          } else {
-            alert("x la SNT");
-            break;
+      function kiemtraSNT() {
+        let x = parseFloat(prompt("input your number "));
+        console.log(x);
+        while (x == "" || isNaN(x) || parseInt(x) != x) {
+          x = +prompt("input your number ");
+        }
+        if (x < 2) {
+          alert(x + " khong phai la so NT");
+        } else {
+          for (let i = 2; i <= x / 2; i++) {
+            if (x % i == 0) {
+              alert(x + "  khong phai la SNT");
+              break;
+            } else {
+              alert(x + " la SNT");
+              break;
+            }
           }
         }
       }
+      kiemtraSNT();
     </script>
   </body>
 </html>
